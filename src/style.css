@@ -84,13 +84,13 @@ p {
   flex-direction: column;
 }
 
-.control {
+.form-container {
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
 }
 
-.control-button {
+.form-button {
   background: var(--Light-Grey-transparent);
   width: 50px;
   height: 50px;
@@ -103,26 +103,26 @@ p {
   transition: 0.2s;
 }
 
-.control-button span {
+.form-button span {
   color: var(--Light-Grey);
 }
 
-.control-button:hover span {
+.form-button:hover span {
   color: var(--White);
 }
 
-.control-button.active {
+.form-button.active {
   background: var(--Orange);
 }
 
-.control-button input {
+.form-button input {
   display: none;
 }
 
-.control-button.active span {
+.form-button.active span {
   color: var(--White);
 }
 
-.control-button:hover {
+.form-button:hover {
   background: var(--Light-Grey);
 }
