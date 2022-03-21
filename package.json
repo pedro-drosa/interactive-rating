@@ -1,0 +1,12 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "prettier": "^2.6.0"
+  }
+}
