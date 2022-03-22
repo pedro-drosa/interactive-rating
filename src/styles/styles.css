@@ -1,0 +1,116 @@
+/*General Styles*/
+/*Card*/
+.card {
+  padding: 30px;
+  width: 375px;
+  background: var(--Dark-Blue);
+  border-radius: 1.5rem;
+  margin: 10px;
+}
+
+.card h1 {
+  margin: 20px 0 10px 0;
+  color: var(--White);
+}
+
+.card p {
+  color: var(--Light-Grey);
+  line-height: 1.5rem;
+  max-width: 300px;
+}
+
+.card-icon {
+  background: var(--Light-Grey-transparent);
+  padding: 15px;
+  border-radius: 50%;
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.card-button {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  padding: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2rem;
+  color: var(--White);
+  background: var(--Orange);
+  transition: 0.2s;
+}
+
+/*Card-Thankyou*/
+.card-thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.card-thankyou-result {
+  margin: 30px 0 0 0;
+  letter-spacing: 0.1em;
+  padding: 10px 15px;
+  border-radius: 2rem;
+  color: var(--Orange);
+  background: var(--Light-Grey-transparent);
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.form-button {
+  background: var(--Light-Grey-transparent);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--White);
+  transition: 0.2s;
+}
+
+.form-button span {
+  color: var(--Light-Grey);
+}
+
+.form-button input {
+  display: none;
+}
+
+/* Active States */
+.card-button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.form-button:hover {
+  background: var(--Light-Grey);
+}
+
+.form-button:hover span {
+  color: var(--White);
+}
+
+.form-button.active span {
+  color: var(--White);
+}
+
+.form-button.active {
+  background: var(--Orange);
+}
