@@ -1,6 +1,6 @@
 class ResultController {
   index(req, res) {
-    return res.send('Hello Result Controller');
+    return res.render('result');
   }
 }
 

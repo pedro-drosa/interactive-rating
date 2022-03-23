@@ -1,0 +1,38 @@
+<%- include('./partials/head.ejs')%>
+  <section class="card">
+    <div class="card-icon">
+      <img src="assets/icon-star.svg" alt="orange star" />
+    </div>
+    <h1>How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is
+      appreciated to help us improve our offering!
+    </p>
+    <form class="form" action="/result">
+      <div class="form-container">
+        <label class="form-button active">
+          <span>1</span>
+          <input type="radio" value="1" name="evaluationGrade" />
+        </label>
+        <label class="form-button">
+          <span>2</span>
+          <input type="radio" value="2" name="evaluationGrade" />
+        </label>
+        <label class="form-button">
+          <span>3</span>
+          <input type="radio" value="3" name="evaluationGrade" />
+        </label>
+        <label class="form-button">
+          <span>4</span>
+          <input type="radio" value="4" name="evaluationGrade" />
+        </label>
+        <label class="form-button">
+          <span>5</span>
+          <input type="radio" value="5" name="evaluationGrade" />
+        </label>
+      </div>
+      <button type="submit" class="card-button">submit</button>
+    </form>
+  </section>
+  <script src="scripts/index.js"></script>
+<%- include('./partials/body.ejs')%>

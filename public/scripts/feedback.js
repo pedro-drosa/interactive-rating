@@ -9,7 +9,4 @@ cardThankyouResultElement.innerText = `You selected ${
   evaluationGrade || 1
 } out of 5`;
 
-setTimeout(
-  () => (window.location.href = 'http://127.0.0.1:5500/index.html'),
-  1000
-);
+setTimeout(() => (window.location.href = '/'), 1000);
