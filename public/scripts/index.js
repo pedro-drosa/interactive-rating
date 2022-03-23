@@ -1,21 +1,8 @@
-const inputElements = document.querySelectorAll('input[name="feedback"]');
-const labelElements = document.querySelectorAll('.form-button');
+import InteractiveSorting from './InteractiveSorting.js';
 
-function addActiveClassToButton(event, elements) {
-  elements.forEach((label) => label.classList.remove('active'));
-  event.currentTarget.classList.add('active');
-}
-
-function getFeedbackValue(event) {
-  return event.target.value;
-}
-
-inputElements.forEach((element) =>
-  element.addEventListener('click', getFeedbackValue)
+const interactiveSorting = new InteractiveSorting(
+  'input[name="feedback"]',
+  '.form-button'
 );
 
-labelElements.forEach((label) =>
-  label.addEventListener('click', (event) =>
-    addActiveClassToButton(event, labelElements)
-  )
-);
+interactiveSorting.init();

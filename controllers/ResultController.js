@@ -1,6 +1,7 @@
 class ResultController {
   index(req, res) {
-    return res.render('result');
+    const { evaluationGrade } = req.query;
+    return res.render('result', { evaluationGrade });
   }
 }
 

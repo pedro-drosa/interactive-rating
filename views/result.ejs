@@ -6,12 +6,20 @@
         alt="a cell phone issuing the feedback voucher"
       />
     </div>
-    <div class="card-thankyou-result"></div>
+    <div class="card-thankyou-result">
+      <% if (evaluationGrade) { %>
+        You selected <%= evaluationGrade %> out of 5
+      <% } else {%>
+        You have not selected any value :(
+      <%} %>
+    </div>
     <h1>Thank You!</h1>
     <p>
       We appreciate you taking the time to give a rating. If you ever need
       more support, don´t hesitate to get in touch!
     </p>
   </section>
-  <script src="scripts/feedback.js"></script>
+  <script>
+    setTimeout(() => (window.location.href = '/'), 1000);
+  </script>
 <%- include('./partials/body.ejs')%>
