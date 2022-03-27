@@ -13,7 +13,7 @@ class InteractiveSorting {
     return event.target.value;
   }
 
-  showTime(timeOut) {
+  static showTime(timeOut) {
     setTimeout(() => (window.location.href = '/'), timeOut);
   }
 

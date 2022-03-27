@@ -31,3 +31,12 @@ body {
 p {
   font-size: calc(1rem - 1px);
 }
+
+fieldset {
+  border: none;
+}
+
+legend {
+  z-index: -100;
+  position: absolute;
+}
